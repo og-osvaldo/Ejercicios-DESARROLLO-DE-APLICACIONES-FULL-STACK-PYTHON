@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <a href="#" id="linkGoogle">Ir a Google</a>
+
+    <script>
+        $(document).ready(function() {
+            
+            $("#linkGoogle").click(function(event) {
+                event.preventDefault();
+                alert("Has pulsado el enlace...Ahora seras redireccionado a Google");
+                $(location).attr('href', 'https://www.google.com');
+            });
+        });
+    </script>
+
+</body>
+</html>
